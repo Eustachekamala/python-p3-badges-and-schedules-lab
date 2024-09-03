@@ -29,13 +29,16 @@ print(assign_rooms(speakers))
 
 
 def printer(names):
-    
+    '''Here we call the functions we've created to create badges and assign rooms.'''
     badges = batch_badge_creator(names)
+    '''We call the function to assign rooms to the speakers.'''
     assignments = assign_rooms(names)
     
+    '''We print the badges.'''
     for badge in badges:
         print(badge)
     
+    '''We print the room assignments.'''
     for assignment in assignments:
         print(assignment)
 
